@@ -16,52 +16,45 @@ const store = new Vuex.Store({
       state.players.splice(0, state.players.length);
       dispatch("updateLocalStorage");
     },
+    setAllToZero({ state, dispatch }) {
+      state.players.forEach(el => el.score = 0);
+      dispatch("updateLocalStorage");
+    },
     addPlayer({ state, dispatch }, name) {
       state.players.push({ name, score: 0 });
       dispatch("updateLocalStorage");
     },
-    incrementPlayerScore({ state, dispatch }, payload) {
+    changePlayerScore({ state, dispatch }, payload) {
       state.players[payload.index].score += payload.score;
       dispatch("updateLocalStorage");
     },
-    decrementPlayerScore({ state, dispatch }, payload) {
-      state.players[payload.index].score -= payload.score;
-      dispatch("updateLocalStorage");
-    },
-    updateLocalStorage({ state }) {
-      localStorage.setItem("players", JSON.stringify(state.players));
-    },
-    getFromLocalStorage({ state }) {
-      state.players = JSON.parse(localStorage.getItem("players") || "[]");
-    }
+    updateLocalStorage: ({ state }) => localStorage.setItem("players", JSON.stringify(state.players)),
+    getFromLocalStorage: ({ state }) => state.players = JSON.parse(localStorage.getItem("players") || "[]")
   }
 });
 
-const PlayerComponent = Vue.component('Player', {
+const PlayerComponent = Vue.component("Player", {
   props: ["index"],
   template: `
     <tr>
       <th>{{name}}</th>
       <th>{{score}}</th>
-      <th><button @click="incrementScore">+</button></th>
-      <th><button @click="decrementScore">-</button></th>
+      <th><button @click="changeScore(1)">+</button></th>
+      <th><button @click="changeScore(-1)">-</button></th>
       <th><button @click="deletePlayer">✖</button></th>
-    </tr>
-  `,
+    </tr>`,
   methods: {
-    incrementScore() {
-      const score = +prompt("How much?");
-      if (Number.isNaN(score)) return alert("invalid number");
-      store.dispatch("incrementPlayerScore", { index: this.index, score });
-    },
-    decrementScore() {
-      const score = +prompt("How much?");
-      if (Number.isNaN(score)) return alert("invalid number");
-      store.dispatch("decrementPlayerScore", { index: this.index, score });
+    changeScore(num) {
+      try {
+        const score = +eval(prompt(`How much (${this.name})?`));
+        if (Number.isNaN(score)) throw new Error();
+        store.dispatch("changePlayerScore", { index: this.index, score: Math.sign(num) * score });
+      } catch (e) {
+        alert("Invalid number!");
+      }
     },
     deletePlayer() {
-      if (!confirm("Are you sure?")) return;
-      store.dispatch("deletePlayer", this.index);
+      confirm(`Are you sure you want to delete ${this.name}?`) && store.dispatch("deletePlayer", this.index);
     }
   },
   computed: {
@@ -81,9 +74,7 @@ new Vue({
   },
   template: `
   <div class="main">
-
     <table>
-
       <thead>
         <tr>
           <th>Name</th>
@@ -93,46 +84,33 @@ new Vue({
           <th>Delete</th>
         </tr>
       </thead>
-
       <tbody>
         <PlayerComponent v-for="(player, index) in players" :key="index" :index="index" />
       </tbody>
-
     </table>
+
     <form @submit.prevent="submit">
       <input placeholder="new player" type="text" v-model="newPlayerName"/>
       <button type="submit">Add Player</button>
     </form>
-  
-    <button @click="clearAll" class="clear-all" >Clear All</button>
 
-  </div>
-  `,
-  data() {
-    return {
-      newPlayerName: ""
-    }
-  },
+    <button @click="setAllToZero" class="global-action">SET ALL TO 0</button>
+    <button @click="deleteAll" class="global-action">DELETE ALL</button>
+  </div>`,
+  data: () => ({ newPlayerName: "" }),
   methods: {
     submit() {
       if (!this.nameIsValid) return alert("Player name should be more that 2 symbols");
-      store.dispatch("addPlayer", this.newPlayerName);
-      this.newPlayerName = "";
+      store.dispatch("addPlayer", this.newPlayerName), this.newPlayerName = "";
     },
-    clearAll() {
-      if (!confirm("Are you sure? This will delete all players data!")) return;
-      store.dispatch("deleteAllPalyers");
-    }
+    deleteAll: () => confirm("Are you sure you want delete all players?") && store.dispatch("deleteAllPalyers"),
+    setAllToZero: () => confirm("Reset all players score?") && store.dispatch("setAllToZero")
   },
   computed: {
     nameIsValid() {
-      return this.newPlayerName.length > 2;
+      return this.newPlayerName.length > 2
     },
-    players() {
-      return store.state.players;
-    }
+    players: () => store.state.players
   },
-  created() {
-    store.dispatch("getFromLocalStorage");
-  }
+  created: () => store.dispatch("getFromLocalStorage")
 });

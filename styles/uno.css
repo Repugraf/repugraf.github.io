@@ -28,20 +28,23 @@ form > button {
 
 th {
   padding: 3px;
+  max-width: 20vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 main {
   width: 100%;
 }
 
-.clear-all,
+.global-action,
 form > button,
 input {
   box-sizing: content-box;
   height: 40px;
 }
 
-.clear-all {
+.global-action {
   box-sizing: border-box;
   min-width: 100%;
   margin-top: 0.8rem;
@@ -52,4 +55,27 @@ input {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (max-width: 400px) {
+  table * {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  body {
+    margin: 1px;
+  }
+  tr {
+    max-width: 90vw;
+  }
+
+  th {
+    max-width: 15vw;
+  }
+
+  form > input {
+    flex: 2;
+  }
 }
