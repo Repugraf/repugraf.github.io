@@ -24,6 +24,10 @@ const store = new Vuex.Store({
       state.players.push({ name, score: 0 });
       dispatch("updateLocalStorage");
     },
+    renamePlayer({ state, dispatch }, payload) {
+      state.players[payload.index].name = payload.name;
+      dispatch("updateLocalStorage");
+    },
     changePlayerScore({ state, dispatch }, payload) {
       state.players[payload.index].score += payload.score;
       dispatch("updateLocalStorage");
@@ -37,7 +41,7 @@ const PlayerComponent = Vue.component("Player", {
   props: ["index"],
   template: `
     <tr>
-      <th>{{name}}</th>
+      <th @click="rename">{{name}}</th>
       <th>{{score}}</th>
       <th><button @click="changeScore(1)">+</button></th>
       <th><button @click="changeScore(-1)">-</button></th>
@@ -55,6 +59,12 @@ const PlayerComponent = Vue.component("Player", {
     },
     deletePlayer() {
       confirm(`Are you sure you want to delete ${this.name}?`) && store.dispatch("deletePlayer", this.index);
+    },
+    rename() {
+      const name = prompt(`New name for ${this.name}`);
+      if (typeof name?.length !== "number") return;
+      if (name.length < 3) return alert("New name must have more than 2 symbols!");
+      store.dispatch("renamePlayer", { index: this.index, name });
     }
   },
   computed: {
