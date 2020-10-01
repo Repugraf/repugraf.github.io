@@ -181,6 +181,11 @@ export default {
       <p>Created a few libraries. So I have experience with jsdoc and npm.</p>`
     },
     {
+      "title": "Panoply.io (react, nodejs)",
+      "content": `<p>Working on tesing anchitecture for react (jest, react-testing library).</p>
+      <p>Front-end optimizations like code spliting (lazy loading) and moving project build system from Parcel to Webpack.</p>`
+    },
+    {
       "title": "My Pet Projects",
       "content": `<h4>Docgen</h4>
       <p>The purpose of this project was to quickly generate docs for your rest api.</p>
@@ -190,7 +195,13 @@ export default {
       <hr>
       <h4>Event Awaiter</h4>
       <p>This is the npm package. Created it because I had problem with order of event execution multiple times on backend and frontend.</p>
-      <p>Here's the link: <a href="https://www.npmjs.com/package/event-awaiter">event-awaiter</a></p>`
+      <p>Here's the link: <a href="https://www.npmjs.com/package/event-awaiter">event-awaiter</a></p>
+      <hr>
+      <h4>React Cli</h4>
+      <p>Create-react-app is not good enough for me. But configuring webpack every single time is a pain.</p>
+      <p>So I decided to cerate my own npm package to suffice my needs</p>
+      <p>I was inspired by vue cli so I implemented a similar solution</p>
+      <p>Npm link: <a href="https://www.npmjs.com/package/@repugraf/react-cli">@repugraf/react-cli</a></p>`
     }
   ]
 }
