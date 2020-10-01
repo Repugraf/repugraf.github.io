@@ -53,8 +53,8 @@ input {
 
 .main-page-link {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 3px;
+  right: 3px;
 }
 
 @media (max-width: 400px) {
