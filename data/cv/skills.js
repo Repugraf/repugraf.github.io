@@ -43,7 +43,7 @@ export default [
           "Authentication with jwt or other type of tokens (unique strings)",
           "Generation of PDFs with puppeteer",
           "Emails",
-          "Web Sockets (Socket.io)",
+          "Web Sockets, Socket.io",
           "Working with files",
           "child_process && worker_threads",
           "PM2",
@@ -157,7 +157,9 @@ export default [
     sections: [{
       items: [
         "Working with team",
-        "Team Leading (few junior devs)"
+        "Team Leading (few junior devs)",
+        "Interviewing job candidates",
+        "Creating test tasks"
       ]
     }]
   }

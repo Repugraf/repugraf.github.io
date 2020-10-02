@@ -6,7 +6,7 @@ export default [
     The project was a Polish version of PwC-suite. Database – MSSQL.`
   },
   {
-    title: "ElifTech (vue + node)",
+    title: "ElifTech (vue + node.js)",
     content: `Main task – creating a plugin client could insert in any website. 
     The purpose of it is to help clients choose a mortgage loan program that fits him the most based on user input if the form. 
     Also pdf have to be generated with all info about current program and sent to user email. 
@@ -21,7 +21,7 @@ export default [
     One of the projects was working with Stripe api to manage user cards and payments.`
   },
   {
-    title: "Voicenter (node + mysql)",
+    title: "Voicenter (node.js + mysql)",
     content: `<p>Had a lot of projects here.</p>
     <p>Big chunk of work was creating and managing procedures and functions in mysql (working with json, aggregation, transactions, generating statuses and error messages) for rest api endpoints. Also generating swagger documentation.</p>
     <hr>
@@ -48,10 +48,12 @@ export default [
     <hr>
     <p>Created a few libraries. So I have experience with jsdoc and npm.</p>
     <hr>
-    <p>Had experience working as lead of a few junior devs.</p>`
+    <p>Had experience working as lead of a few junior devs.</p>
+    <hr>
+    <p>Interviewing candidates for a job position and creating test tasks for them</p>`
   },
   {
-    title: "Panoply.io (react, nodejs)",
+    title: "Panoply.io (react, node.js)",
     content: `<p>Working on tesing anchitecture for react (jest, react-testing library).</p>
     <p>Front-end optimizations like code spliting (lazy loading) and moving project build system from Parcel to Webpack.</p>
     <p>Changing circleci configs.</p>`
