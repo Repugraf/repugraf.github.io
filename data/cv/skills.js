@@ -8,13 +8,26 @@ export default [
           "CSS/CSS3 (incl. Flexbox and CSS grid)",
           "JavaScript(ESNext)",
           "TypeScript",
-          "SCSS/SASS",
-          "Bootstrap 3, 4, 5",
+          "AssemblyScript",
+          "SCSS/SASS"
+        ]
+      },
+      {
+        title: "Frameworks & Libraries",
+        items: [
           "React, hooks, redux, router",
           "Vue, Vuex",
           "Angular (basics)",
-          "Webpack",
+          "Bootstrap 3, 4, 5",
           "JQuery"
+        ]
+      },
+      {
+        title: "Build Tools & Bundlers",
+        items: [
+          "Webpack",
+          "Parcel",
+          "Rollup"
         ]
       }
     ]
@@ -35,7 +48,8 @@ export default [
           "child_process && worker_threads",
           "PM2",
           "Web Scraping with jsdom and puppeteer",
-          "Building telegram bots"
+          "Building telegram bots",
+          "Serverless Framework"
         ]
       },
       {
@@ -43,6 +57,14 @@ export default [
         items: [
           "ASP.Net MVC | core",
           "Umbraco CMS"
+        ]
+      },
+      {
+        title: "Other",
+        items: [
+          "Linux ( creating bash scripts, working with background processes )",
+          "Rabbitmq",
+          "Cron"
         ]
       }
     ]
@@ -100,19 +122,42 @@ export default [
     }]
   },
   {
-    name: "Other",
+    name: "Management & Tracking",
+    sections: [
+      {
+        items: [
+          "Git (GitHub, GitLab, AzureDevOps)",
+          "Jira, Trello",
+          "Code reviews"
+        ]
+      },
+      {
+        title: "Docs",
+        items: [
+          "Writing readme",
+          "Swagger",
+          "jsdoc"
+        ]
+      }
+    ]
+  },
+  {
+    name: "Languages",
     sections: [{
       items: [
-        "Linux ( creating bash scripts, working with background processes )",
-        "Git (GitHub, GitLab, AzureDevOps)",
-        "Code reviews",
-        "Jira, Trello",
-        "Experience of working with team",
-        "Confident in English (Advanced)",
-        "Rabbitmq",
-        "Swagger",
-        "jsdoc",
-        "cron"
+        "English - Advanced (C1)",
+        "Ukrainian - Native",
+        "Russian - Native",
+        "Czech - Intermediate (B1)"
+      ]
+    }]
+  },
+  {
+    name: "Soft Skills",
+    sections: [{
+      items: [
+        "Working with team",
+        "Team Leading (few junior devs)"
       ]
     }]
   }

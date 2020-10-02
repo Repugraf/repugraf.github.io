@@ -46,12 +46,15 @@ export default [
     <li>Redis</li>
     </ul>
     <hr>
-    <p>Created a few libraries. So I have experience with jsdoc and npm.</p>`
+    <p>Created a few libraries. So I have experience with jsdoc and npm.</p>
+    <hr>
+    <p>Had experience working as lead of a few junior devs.</p>`
   },
   {
     title: "Panoply.io (react, nodejs)",
     content: `<p>Working on tesing anchitecture for react (jest, react-testing library).</p>
-    <p>Front-end optimizations like code spliting (lazy loading) and moving project build system from Parcel to Webpack.</p>`
+    <p>Front-end optimizations like code spliting (lazy loading) and moving project build system from Parcel to Webpack.</p>
+    <p>Changing circleci configs.</p>`
   },
   {
     title: "My Pet Projects",
