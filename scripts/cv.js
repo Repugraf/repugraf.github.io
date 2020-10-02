@@ -1,4 +1,4 @@
-import data from "/data/cv.js";
+import data from "/data/cv/index.js";
 
 const app = document.querySelector("#app");
 
