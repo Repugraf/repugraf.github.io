@@ -117,7 +117,7 @@ export default [
       items: [
         "Jest",
         "React Testing Library",
-        "Nodejs assert standart package"
+        "Nodejs assert standard package"
       ]
     }]
   },
