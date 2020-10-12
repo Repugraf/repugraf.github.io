@@ -9,14 +9,15 @@ export default [
           "JavaScript(ESNext)",
           "TypeScript",
           "AssemblyScript",
-          "SCSS/SASS"
+          "SCSS/SASS",
+          "PWA"
         ]
       },
       {
         title: "Frameworks & Libraries",
         items: [
-          "React, hooks, redux, router",
-          "Vue, Vuex",
+          "React, redux, router, next.js",
+          "Vue, Vuex, router",
           "Angular (basics)",
           "Bootstrap 3, 4, 5",
           "JQuery"
