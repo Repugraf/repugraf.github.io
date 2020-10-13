@@ -94,7 +94,8 @@ export default [
         items: [
           "Sequelize",
           "Mongoose",
-          "Entity Framework (SQL for C#)"
+          "Entity Framework",
+          "Bookshelf"
         ]
       }
     ]
@@ -161,6 +162,14 @@ export default [
         "Team Leading (few junior devs)",
         "Interviewing job candidates",
         "Creating test tasks"
+      ]
+    }]
+  },
+  {
+    name: "Other",
+    sections: [{
+      items: [
+        "Regex"
       ]
     }]
   }
