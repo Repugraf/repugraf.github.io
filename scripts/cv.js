@@ -1,6 +1,8 @@
 import data from "/data/cv/index.js";
 
-const app = document.querySelector("#app");
+const cv = document.createElement("div");
+cv.id = "cv";
+document.body.appendChild(cv);
 
 const myName = document.createElement("my-name");
 const myInfo = document.createElement("my-info");
@@ -10,11 +12,11 @@ const myExperience = document.createElement("my-experience");
 
 // name section
 myName.innerHTML += data.name;
-app.appendChild(myName);
+cv.appendChild(myName);
 
 // info section
 myInfo.innerHTML = data.info;
-app.appendChild(myInfo);
+cv.appendChild(myInfo);
 
 // summary section
 mySummary.innerHTML = "<h1>SUMMARY</h1>";
@@ -22,7 +24,7 @@ const summaryContend = document.createElement("div");
 summaryContend.classList.add("summary-contend");
 summaryContend.innerHTML += data.summary;
 mySummary.appendChild(summaryContend);
-app.appendChild(mySummary);
+cv.appendChild(mySummary);
 
 // skills section
 mySkills.innerHTML = "<h1>SKILLS</h1>";
@@ -67,7 +69,7 @@ data.skills.forEach(({ name, sections }) => {
 });
 
 mySkills.appendChild(skillSectionsContainer);
-app.appendChild(mySkills);
+cv.appendChild(mySkills);
 
 // experience section
 myExperience.innerHTML = "<h1>EXPERIENCE</h1>";
@@ -90,4 +92,4 @@ data.experience.forEach(({ title, content }) => {
 });
 
 myExperience.appendChild(experienceContainter);
-app.appendChild(myExperience);
+cv.appendChild(myExperience);

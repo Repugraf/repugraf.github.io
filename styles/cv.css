@@ -7,7 +7,7 @@ body {
   background-color: rgb(242, 242, 242);
 }
 
-#app > * {
+#cv > * {
   display: block;
   margin-left: .7rem;
   margin-right: .7rem;
@@ -62,13 +62,13 @@ ul.section-list li {
 }
 
 @media (min-width: 1100px) {
-  #app {
+  #cv {
     column-count: 3;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1099px) {
-  #app {
+  #cv {
     column-count: 2;
   }
 }
