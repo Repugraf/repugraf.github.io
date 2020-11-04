@@ -56,7 +56,9 @@ export default [
     title: "Panoply.io (react, node.js)",
     content: `<p>Working on tesing anchitecture for react (jest, react-testing library).</p>
     <p>Front-end optimizations like code spliting (lazy loading) and moving project build system from Parcel to Webpack.</p>
-    <p>Changing circleci configs.</p>`
+    <p>Modifying custom material-ui component library</p>
+    <p>Changing circleci configs.</p>
+    <p>Adding new endpoints (webhoks) for Shopify</p>`
   },
   {
     title: "My Pet Projects",
