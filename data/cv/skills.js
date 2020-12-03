@@ -27,6 +27,7 @@ export default [
         title: "Build Tools & Bundlers",
         items: [
           "Webpack",
+          "Snowpack",
           "Parcel",
           "Rollup"
         ]
