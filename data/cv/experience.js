@@ -57,8 +57,10 @@ export default [
     content: `<p>Working on testing architecture for react (jest, react-testing library).</p>
     <p>Front-end optimizations like code splitting (lazy loading) and moving project build system from Parcel to Webpack.</p>
     <p>Modifying custom material-ui component library</p>
-    <p>Changing circleci configs.</p>
-    <p>Adding new endpoints (webhoks) for Shopify</p>`
+    <p>Changing circleci configs, optimizing dockerfile.</p>
+    <p>Adding new endpoints and optimizing existing ones</p>
+    <p>Implementing new designs for old pages/components</p>
+    <p>While working here I've had plenty of experience with code reviews</p>`
   },
   {
     title: "My Pet Projects",
