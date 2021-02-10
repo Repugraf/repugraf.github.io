@@ -33,7 +33,8 @@ export default [
         ]
       }
     ]
-  }, {
+  },
+  {
     name: "Back-end",
     sections: [
       {
