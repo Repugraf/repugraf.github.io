@@ -26,7 +26,7 @@ export default [
     <p>Big chunk of work was creating and managing procedures and functions in mysql (working with json, aggregation, transactions, generating statuses and error messages) for rest api endpoints. Also generating swagger documentation.</p>
     <hr>
     <h4>Socket.io project.</h4>
-    <p>Sending real time data from database to frontend. Additianaly authentication process with existing php api was implemented. Also json structure had to be changed.</p>
+    <p>Sending real time data from database to frontend. Additionally authentication process with existing php api was implemented. Also json structure had to be changed.</p>
     <hr>
     <h4>Fax project.</h4>
     <p>User sends an email and this email is converted to tiff file and send to real fax. After that user receives confirmation email back.</p>
@@ -37,7 +37,7 @@ export default [
     <p>User sends sound file he can record in vue app or choose on his system. After that this file had to be checked with clamAV for viruses, and be converted to mp3 and ulaw and to 8 bit with bitrate of 8kbps and 1 channel (to reduce file size)</p>
     <hr>
     <h4>Webrtc meeting-manager</h4>
-    <p>Implemented managing of sessions, permisions, and keeping sessions alive for Zoom like project. Technologies were used:</p>
+    <p>Implemented managing of sessions, permissions, and keeping sessions alive for Zoom like project. Technologies were used:</p>
     <ul>
     <li>TypeScript (nodejs)</li>
     <li>Janus webrtc server</li>
@@ -54,8 +54,8 @@ export default [
   },
   {
     title: "Panoply.io (react, node.js)",
-    content: `<p>Working on tesing anchitecture for react (jest, react-testing library).</p>
-    <p>Front-end optimizations like code spliting (lazy loading) and moving project build system from Parcel to Webpack.</p>
+    content: `<p>Working on testing architecture for react (jest, react-testing library).</p>
+    <p>Front-end optimizations like code splitting (lazy loading) and moving project build system from Parcel to Webpack.</p>
     <p>Modifying custom material-ui component library</p>
     <p>Changing circleci configs.</p>
     <p>Adding new endpoints (webhoks) for Shopify</p>`
