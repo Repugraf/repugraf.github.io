@@ -114,7 +114,7 @@ export default [
     <li>Adding new endpoints and optimizing existing ones</li>
     <li>Implementing new designs for old pages/components</li>
     </ul>
-    <p>While working here I've had plenty of experience with code reviews</p>`
+    <p>While working here I've had plenty of experience with code reviews.</p>`
   },
   {
     title: "My Pet Projects",
@@ -142,8 +142,8 @@ export default [
 
     <h4>Store</h4>
     <p>
-      I've used redux for some time for react apps. It good enough but it requires some boilerplate.
-      Main boilerplate are reducers which are useless in my opinion.
+      I've used redux for some time for react apps. It's good enough but it requires some boilerplate.
+      Main issue is a need to implement the reducers, which are useless in my opinion.
     </p>
     <p>This library fixes this issue. It's very minimalistic and easy to use. No setup is required.</p>
     <p>Npm: <a href="https://www.npmjs.com/package/@repugraf/store">@repugraf/store</a></p>`
