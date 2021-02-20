@@ -69,15 +69,29 @@ export default [
     <p>Used vue.js on frontend node.js on backend and mongodb as a database.</p>
     <p>Here is the repo: <a href="https://github.com/Repugraf/docgen">Repugraf/docgen</a></p>
     <p>Deployed project here: <a href="https://docgen.work">docgen.work</a></p>
+
     <hr>
+
     <h4>Event Awaiter</h4>
-    <p>This is the npm package. Created it because I had problem with order of event execution multiple times on backend and frontend.</p>
-    <p>Here's the link: <a href="https://www.npmjs.com/package/event-awaiter">event-awaiter</a></p>
+    <p>I've created this library because I had problem with order of event execution multiple times on backend and frontend.</p>
+    <p>Npm: <a href="https://www.npmjs.com/package/event-awaiter">event-awaiter</a></p>
+
     <hr>
+
     <h4>React Cli</h4>
     <p>Create-react-app is not good enough for me. But configuring webpack every single time is a pain.</p>
     <p>So I decided to cerate my own npm package to suffice my needs</p>
     <p>I was inspired by vue cli so I implemented a similar solution</p>
-    <p>Npm link: <a href="https://www.npmjs.com/package/@repugraf/react-cli">@repugraf/react-cli</a></p>`
+    <p>Npm: <a href="https://www.npmjs.com/package/@repugraf/react-cli">@repugraf/react-cli</a></p>
+
+    <hr>
+
+    <h4>Store</h4>
+    <p>
+      I've used redux for some time for react apps. It good enough but it requires some boilerplate.
+      Main boilerplate are reducers which are useless in my opinion.
+    </p>
+    <p>This library fixes this issue. It's very minimalistic and easy to use. No setup is required.</p>
+    <p>Npm: <a href="https://www.npmjs.com/package/@repugraf/store">@repugraf/store</a></p>`
   }
 ]
