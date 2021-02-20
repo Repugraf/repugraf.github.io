@@ -120,7 +120,7 @@ export default [
     title: "My Pet Projects",
     content: `<h4>Docgen</h4>
     <p>The purpose of this project was to quickly generate docs for your rest api.</p>
-    <p>Used vue.js on frontend node.js on backend and mongodb as a database.</p>
+    <p>Used <strong>Vue.js</strong> on frontend, <strong>Node.js</strong> on backend and <strong>MongoDB</strong> as a database.</p>
     <p>Here is the repo: <a href="https://github.com/Repugraf/docgen">Repugraf/docgen</a></p>
     <p>Deployed project here: <a href="https://docgen.work">docgen.work</a></p>
 
