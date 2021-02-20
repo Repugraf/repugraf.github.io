@@ -20,7 +20,8 @@ export default [
           "Vue, Vuex, router",
           "Angular (basics)",
           "Bootstrap 3, 4, 5",
-          "JQuery"
+          "JQuery",
+          "Material-UI"
         ]
       },
       {
