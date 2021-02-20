@@ -63,6 +63,9 @@ export default [
         ]
       },
       {
+        title: "Python"
+      },
+      {
         title: "Other",
         items: [
           "Linux ( creating bash scripts, working with background processes )",
