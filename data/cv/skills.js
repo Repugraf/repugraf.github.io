@@ -121,6 +121,7 @@ export default [
       items: [
         "Jest",
         "React Testing Library",
+        "Sinon.js",
         "Nodejs assert standard package"
       ]
     }]
