@@ -52,14 +52,16 @@ data.skills.forEach(({ name, sections }) => {
       skillSubSection.appendChild(subSectionTitle);
     }
 
-    const subSectionUL = document.createElement("ul");
-    subSectionUL.classList.add("section-list");
-    items.forEach(item => {
-      const li = document.createElement("li");
-      li.innerHTML = item;
-      subSectionUL.appendChild(li);
-    });
-    skillSubSection.appendChild(subSectionUL);
+    if (items) {
+      const subSectionUL = document.createElement("ul");
+      subSectionUL.classList.add("section-list");
+      items.forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = item;
+        subSectionUL.appendChild(li);
+      });
+      skillSubSection.appendChild(subSectionUL);
+    }
 
     skillSections.appendChild(skillSubSection);
   });
