@@ -1,29 +1,35 @@
 export default [
   {
-    title: "PwC (.NET dev)",
+    title: "PwC",
     content: `<p>
-    Main work was with <strong>Umbraco</strong> CMS, server-side rendering,
-    adding and fixing APIs and some work with <strong>AngularJS</strong> (first version of it).
+    Main work was with <strong>Umbraco</strong> CMS (.Net), server-side rendering,
+    adding and fixing APIs (C#) and some work with <strong>AngularJS</strong> (first version of it).
     </p>
     <p>
     Mostly I fixed bugs and added minor changes (front-end and back-end). 
     The project was a Polish version of PwC-suite.
     </p>
-    <p>Database – <strong>MSSQL</strong>.</p>`
+    <p>
+      Database – <strong>MSSQL</strong><br>
+      Deployment - <strong>Azure</strong> services<br>
+      Tracking - <strong>Azure DevOps</strong>
+    </p>`
   },
   {
-    title: "ElifTech (vue + node.js)",
+    title: "ElifTech",
     content: `<p>Main task – creating a plugin (frontend app) client could insert in any website.</p> 
     <p>
       The purpose of it is to help clients choose a mortgage loan program that
       fits him the most based on user input if the form.
     </p>
     <p>Also pdf have to be generated with all info about current program and sent to user email.</p> 
-    <p>Furthermore authentication and admin panel had to be implemented.</p>
+    <p>Furthermore authentication and admin panel had to be implemented/maintained.</p>
     <p>
-      Used <strong>Vue.js</strong> for it.<br>
-      Database – <strong>PostgreSQL</strong>.<br>
-      Backend - <strong>Python (Django)</strong>.
+      Frontend - <strong>Vue.js</strong><br>
+      Database – <strong>PostgreSQL</strong><br>
+      Backend - <strong>Python (Django)</strong><br>
+      Deployment - <strong>DigitalOcean</strong> vps instance (Droplet)<br>
+      Tracking - <strong>GitHub</strong>
     </p>`
   },
   {
@@ -32,12 +38,13 @@ export default [
     <p>One of the projects was working with Stripe api to manage user cards and payments.</p>`
   },
   {
-    title: "Voicenter (node.js + mysql)",
+    title: "Voicenter",
     content: `<p>Had a lot of projects here.</p>
     <p>
-    Big chunk of work was creating and managing procedures and functions in <strong>MySQL</strong>
+      Big chunk of work was creating and managing procedures and functions in <strong>MySQL</strong>
       (working with json, aggregation, transactions, generating statuses and error messages)
       for rest api endpoints. Also generating <strong>swagger</strong> documentation.
+      As a backend language <strong>Node.js</strong> was used.
     </p>
     <hr>
     <h4>Socket.io project.</h4>
@@ -46,6 +53,7 @@ export default [
       Additionally authentication process with existing php api was implemented.
       Also json structure had to be changed.
     </p>
+    <p>Tech Stack: <strong>Node.js, Socket.io, MySQL</strong></p>
     <hr>
     <h4>Fax project.</h4>
     <p>
@@ -54,22 +62,24 @@ export default [
     </p>
     <p>
       There was a work with <strong>googleScript</strong> (to get data form gmail inbox),
-      <strong>googleAPI</strong> to download message attachments and message content,
-      <strong>clamAV</strong> linux package to check files on viruses.
+      <strong>googleAPI</strong> to download message attachments and message content, then files were checked viruses.
+      After that <strong>FreeSwitch</strong> was used to send actual fax.
     </p>
     <p>
       As you can see this process has a lot of steps and takes some time.
       So multiple workers had to be done and managed
       (MessageSyncWorker, DownloaderWorker, FaxSenderWorker, EmailConfirmationWorker)
     </p>
+    <p>Tech Stack: <strong>Node.js, MySQL, GoogleScript, Google SDK, ClamAV, FreeSwitch</strong></p>
     <hr>
     <h4>SoundFile mini project</h4>
     <p>
       User sends sound file he can record in vue app or choose on his system.
-      After that this file had to be checked with <strong>clamAV</strong> for viruses,
+      After that this file had to be checked for viruses,
       and be converted to mp3 and ulaw and to 8 bit with bitrate of 8kbps and 1 channel
       (to reduce file size)
     </p>
+    <p>Tech Stack: <strong>Node.js, MySQL, ClamAV, SoX</strong></p>
     <hr>
     <h4>Webrtc meeting-manager</h4>
     <p>
@@ -94,7 +104,7 @@ export default [
     <p>Interviewing candidates for a job position and creating test tasks for them</p>`
   },
   {
-    title: "Panoply.io (react, node.js)",
+    title: "Panoply.io",
     content: `
     <p>This company offers central cloud database.</p>
     <p>
@@ -114,7 +124,8 @@ export default [
     <li>Adding new endpoints and optimizing existing ones</li>
     <li>Implementing new designs for old pages/components</li>
     </ul>
-    <p>While working here I've had plenty of experience with code reviews.</p>`
+    <p>While working here I've had plenty of experience with code reviews.</p>
+    <p>Tech Stack: <strong>React, Node.js, PostgreSQL, MongoDB, Docker</strong></p>`
   },
   {
     title: "My Pet Projects",
