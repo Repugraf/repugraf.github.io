@@ -176,7 +176,7 @@ export default [
 
     <h4>Store</h4>
     <p>
-      I've used redux for some time for react apps. It's good enough but it requires some boilerplate.
+      I've used redux for some time in react apps. It's good enough but it requires some boilerplate.
       Main issue is a need to implement the reducers, which are useless in my opinion.
     </p>
     <p>This library fixes this issue. It's very minimalistic and easy to use. No setup is required.</p>
