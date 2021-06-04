@@ -11,6 +11,6 @@ export default `
   </ul>
   <p>
     Worked for plenty of clients/companies all over the world
-    (UK, Israel, Canada, New Zealand, Poland).
+    (US, UK, Israel, Canada, New Zealand, Poland).
   </p>
 `
