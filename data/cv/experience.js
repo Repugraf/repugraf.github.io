@@ -20,7 +20,7 @@ export default [
     content: `<p>Main task – creating a plugin (frontend app) client could insert in any website.</p> 
     <p>
       The purpose of it is to help clients choose a mortgage loan program that
-      fits him the most based on user input if the form.
+      fits him the most based on user input in the form.
     </p>
     <p>Also pdf have to be generated with all info about current program and sent to user email.</p> 
     <p>Furthermore authentication and admin panel had to be implemented/maintained.</p>
