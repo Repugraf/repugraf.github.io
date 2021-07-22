@@ -32,8 +32,11 @@ export default [
   },
   {
     title: "Freelance",
-    content: `<p>Worked mostly with frontend (<strong>vue.js</strong>).</p>
-    <p>One of the projects was working with Stripe api to manage user cards and payments.</p>`
+    content: `<p>Worked mostly with frontend.</p>
+    <ul>
+      <li>Working with Stripe api to manage user cards and payments.</li>
+      <li>Working with <strong>Electron</strong> and adding features to existing project (photo gallery)</li>
+    </ul>`
   },
   {
     title: "Voicenter",
@@ -136,11 +139,15 @@ export default [
       and moving project build system from <strong>Parcel</strong> to <strong>Webpack</strong>.
     </li>
     <li>Modifying custom <strong>material-ui</strong> component library</li>
-    <li>Changing <strong>circleci</strong> configs, optimizing <strong>dockerfile</strong>.</li>
+    <li>Changing <strong>CircleCI</strong> configs, optimizing <strong>dockerfile</strong>.</li>
     <li>Adding new endpoints and optimizing existing ones</li>
     <li>Implementing new designs for old pages/components</li>
+    <li>Working with <strong>BigQuery</strong> API for monitoring and managing quota</li>
+    <li>Working with <strong>Stripe</strong> API and it's webhooks</li>
+    <li>Fixing security vulnerabilities (sql injections, unintended joins, ability to decrypt encrypted data)</li>
+    <li>Attending meetings about planning, designing and architecture of the software</li>
+    <li>Code reviews of PRs from team members</li>
     </ul>
-    <p>While working here I've had plenty of experience with code reviews.</p>
     <p>
       Tech Stack - <strong>React, Node.js, PostgreSQL, MongoDB, Docker</strong><br>
       Deployment - <strong>AWS (EKS)</strong><br>
