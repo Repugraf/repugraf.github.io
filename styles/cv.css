@@ -61,7 +61,7 @@ ul.section-list li {
   font-style: italic;
 }
 
-@madia (min-width: 1501px) {
+@media (min-width: 1501px) {
   #cv {
     column-count: 4;
   }
