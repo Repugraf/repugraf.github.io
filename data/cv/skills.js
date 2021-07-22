@@ -10,7 +10,7 @@ export default [
           "TypeScript",
           "AssemblyScript",
           "SCSS/SASS",
-          "PWA"
+          "PWA, Service Workers"
         ]
       },
       {
