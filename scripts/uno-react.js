@@ -15,7 +15,7 @@ const PlayerComponent = ({ index, player, changePlayerScore, renamePlayer, delet
     confirm(`Are you sure you want to delete ${player.name}?`) && deletePlayer(player.index);
   }
   const rename = () => {
-    const name = prompt(`New name for ${player.name}`);
+    const name = prompt(`New name for ${player.name}`, player.name);
     if (typeof name?.length !== "number") return;
     if (name.length < 3) return alert("New name must have more than 2 symbols!");
     renamePlayer({ index, name })

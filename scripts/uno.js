@@ -61,7 +61,7 @@ const PlayerComponent = Vue.component("Player", {
       confirm(`Are you sure you want to delete ${this.name}?`) && store.dispatch("deletePlayer", this.index);
     },
     rename() {
-      const name = prompt(`New name for ${this.name}`);
+      const name = prompt(`New name for ${this.name}`, this.name);
       if (typeof name?.length !== "number") return;
       if (name.length < 3) return alert("New name must have more than 2 symbols!");
       store.dispatch("renamePlayer", { index: this.index, name });
