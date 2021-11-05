@@ -99,4 +99,4 @@ const Main = () => {
   ]);
 }
 
-render(h(Main), document.getElementById("root"));
+export const init = () => render(h(Main), document.getElementById("root"));

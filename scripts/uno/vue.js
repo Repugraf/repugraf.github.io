@@ -77,7 +77,7 @@ const PlayerComponent = Vue.component("Player", {
   }
 });
 
-new Vue({
+export const init = () => new Vue({
   el: "#root",
   components: {
     PlayerComponent
