@@ -1,5 +1,5 @@
-import { h, render } from "https://esm.sh/preact";
-import { useState, useEffect } from "https://esm.sh/preact/hooks";
+import { h, render } from "https://esm.sh/preact@10.5.15";
+import { useState, useEffect } from "https://esm.sh/preact@10.5.15/hooks";
 
 const PlayerComponent = ({ index, player, changePlayerScore, renamePlayer, deletePlayer }) => {
   const changeScore = num => {
