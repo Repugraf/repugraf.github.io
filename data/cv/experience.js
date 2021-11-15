@@ -155,6 +155,23 @@ export default [
     </p>`
   },
   {
+    title: "Itera, Sector Alarm",
+    content: `
+      <p>Itera is a Norwegian company that's providing outsourcing services for Norwegian customers (<b>Sector Alarm</b> in this case).</p>
+      <p>Main task here is to develop an app for sales reps to sell home security equipment.</p>
+      <p>The app was developed from scratch so there was a requirement to help team and architect with the architecture of the app and the backend.</p>
+      <p>
+        My part of a job was frontend apps. 
+        Created a few different apps and shared npm component library for them which was deployed on Azure Artifacts Storage.
+      </p>
+      <p>
+        Tech Stack - <strong>React (with redux), Rollup (for shared library), TypeScript, .Net (C#), MSSQL</strong><br>
+        Deployment - <strong>Azure</strong><br>
+        Tracking - <strong>Azure DevOps, Jira</strong>
+      </p>
+    `
+  },
+  {
     title: "My Pet Projects",
     content: `<h4>Docgen</h4>
     <p>The purpose of this project is to quickly generate docs for your rest api.</p>

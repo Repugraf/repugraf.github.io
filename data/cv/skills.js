@@ -16,7 +16,7 @@ export default [
       {
         title: "Frameworks & Libraries",
         items: [
-          "React, redux, router, next.js",
+          "React, redux, router, styled components, next.js",
           "Vue, Vuex, router",
           "Angular (basics)",
           "Bootstrap 3, 4, 5",
@@ -30,7 +30,8 @@ export default [
           "Webpack",
           "Snowpack",
           "Parcel",
-          "Rollup"
+          "Rollup",
+          "Vite"
         ]
       }
     ]
