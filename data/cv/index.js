@@ -1,7 +1,7 @@
-import info from  "/data/cv/info.js";
-import summary from "/data/cv/summary.js";
-import skills from "/data/cv/skills.js";
-import experience from "/data/cv/experience.js";
+import info from  "./info.js";
+import summary from "./summary.js";
+import skills from "./skills.js";
+import experience from "./experience.js";
 
 export default {
   name: "Serhii Mamedov",

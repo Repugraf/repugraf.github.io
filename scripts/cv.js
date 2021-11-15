@@ -1,4 +1,4 @@
-import data from "/data/cv/index.js";
+import data from "../data/cv/index.js";
 
 const cv = document.createElement("div");
 cv.id = "cv";
