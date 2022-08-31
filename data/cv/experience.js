@@ -17,7 +17,7 @@ export default [
   },
   {
     title: "ElifTech",
-    content: `<p>Main task – creating a plugin (frontend app) client could insert in any website.</p> 
+    content: `<p>Main task - creating a plugin (frontend app) client could insert in any website.</p> 
     <p>
       The purpose of it is to help clients choose a mortgage loan program that
       fits him the most based on user input in the form.
@@ -160,10 +160,15 @@ export default [
       <p>Itera is a Norwegian company that's providing outsourcing services for Norwegian customers (<b>Sector Alarm</b> in this case).</p>
       <p>Main task here is to develop an app for sales reps to sell home security equipment.</p>
       <p>The app was developed from scratch so there was a requirement to help team and architect with the architecture of the app and the backend.</p>
-      <p>
-        My part of a job was frontend apps. 
-        Created a few different apps and shared npm component library for them which was deployed on Azure Artifacts Storage.
-      </p>
+
+      <p>Worked on:</p>
+      <ul>
+        <li>Team leading frontend team and also interviewing potential new members</li>
+        <li>Sales app</li>
+        <li>Admin app</li>
+        <li>Sales API (C#)</li>
+        <li>Shared component npm library (deployed to Azure Artifacts Storage)</li>
+      </ul>
       <p>
         Tech Stack - <strong>React (with redux), Rollup (for shared library), TypeScript, .Net (C#), MSSQL</strong><br>
         Deployment - <strong>Azure</strong><br>
@@ -172,18 +177,47 @@ export default [
     `
   },
   {
+    title: "Fisk",
+    content: `
+      <p>
+        The target audience of this project are waiters in restaurants and bars.
+        Sometimes clients don't have cache to they still wanna leave a tip.
+        That's where this product comes into play.
+      </p>
+
+      <p>
+        The product allows users to create their own Stripe account with the
+        help of stipe connect. And receive tips from clients on their main bank
+        account or their investment account (is managed by partner bank).
+      </p>
+
+      <p>
+        Users should be able to see all their transactions and their
+        account balance (Plaid is used for that) and also be able to send money
+        to another user of the app.
+      </p>
+
+      <p>
+        To achieve this goal a few apps had to be created:
+        <ul>
+          <li>Mobile app for creating and managing user accounts (<b>React Native</b>)</li>
+          <li>Payment web app to receive payments (tips) from clients</li>
+          <li>Admin web app to get the statistics and delete users on request</li>
+          <li>API to manage all the backend</li>
+        </ul>
+      </p>
+
+      <p>
+        Tech Stack - <strong>React, React Native, TypeScript, Node.js, PostgreSQL, NX (monorepo)</strong><br>
+        Third Party Services - <strong>Stipe (with connect), Plaid, Galileo</strong>
+        Deployment - <strong>AWS, Sendgrid, SNS</strong><br>
+        Tracking - <strong>GitHub, Jira</strong>
+      </p>
+    `
+  },
+  {
     title: "My Pet Projects",
-    content: `<h4>Docgen</h4>
-    <p>The purpose of this project is to quickly generate docs for your rest api.</p>
-    <p>
-      Tech Stack: <strong>Node.js, Vue.js, MongoDB</strong><br>
-      Deployment - <strong>DigitalOcean</strong>
-    </p>
-    <p>Here is the repo: <a href="https://github.com/Repugraf/docgen">Repugraf/docgen</a></p>
-    <p>Deployed project is here: <a href="https://docgen.work">docgen.work</a></p>
-
-    <hr>
-
+    content: `
     <h4>Event Awaiter</h4>
     <p>I've created this library because I had problem with order of event execution multiple times on backend and frontend.</p>
     <p>Npm: <a href="https://www.npmjs.com/package/event-awaiter">event-awaiter</a></p>
@@ -201,9 +235,24 @@ export default [
     <h4>Store</h4>
     <p>
       I've used redux for some time in react apps. It's good enough but it requires some boilerplate.
-      Main issue is a need to implement the reducers, which are useless in my opinion.
+      Main idea was to create something really easy to use.
     </p>
-    <p>This library fixes this issue. It's very minimalistic and easy to use. No setup is required.</p>
-    <p>Npm: <a href="https://www.npmjs.com/package/@repugraf/store">@repugraf/store</a></p>`
+    <p>This library fixes this issue. It's very minimalistic and easy to use. Almost no setup is required.</p>
+    <p>Npm: <a href="https://www.npmjs.com/package/@repugraf/store">@repugraf/store</a></p>
+    
+    <hr>
+
+    <h4>Cross Domain Storage</h4>
+    <p>
+      I've had a need of cross domain local storage for authentication purposes between multiple subdomains.
+      But there was no libraries to fit my need. Existing libraries were not working at all
+      or full of bugs.
+    </p>
+    <p>Npm:
+      <a href="https://www.npmjs.com/package/@repugraf/cross-domain-storage">
+        @repugraf/cross-domain-storage
+      </a>
+    </p>
+    `
   }
-]
+];

@@ -1,6 +1,6 @@
 export default [
   {
-    name: "Front-end",
+    name: "Web Front-end",
     sections: [
       {
         items: [
@@ -8,7 +8,6 @@ export default [
           "CSS/CSS3 (incl. Flexbox and CSS grid)",
           "JavaScript(ESNext)",
           "TypeScript",
-          "AssemblyScript",
           "SCSS/SASS",
           "PWA, Service Workers"
         ]
@@ -26,13 +25,7 @@ export default [
       },
       {
         title: "Build Tools & Bundlers",
-        items: [
-          "Webpack",
-          "Snowpack",
-          "Parcel",
-          "Rollup",
-          "Vite"
-        ]
+        items: ["Webpack", "Snowpack", "Parcel", "Rollup", "Vite"]
       }
     ]
   },
@@ -48,6 +41,7 @@ export default [
           "Authentication with jwt or other type of tokens (unique strings)",
           "Generation of PDFs with puppeteer",
           "Emails",
+          "SMS",
           "Web Sockets, Socket.io",
           "Working with files",
           "child_process && worker_threads",
@@ -59,10 +53,7 @@ export default [
       },
       {
         title: "C#",
-        items: [
-          "ASP.Net MVC | core",
-          "Umbraco CMS"
-        ]
+        items: ["ASP.Net MVC | core", "Umbraco CMS"]
       },
       {
         title: "Python"
@@ -78,107 +69,98 @@ export default [
     ]
   },
   {
+    name: "Mobile",
+    sections: [{ title: "React Native" }]
+  },
+  {
+    name: "Desktop",
+    sections: [{ title: "Electron" }]
+  },
+  {
     name: "Databases",
     sections: [
       {
         title: "SQL",
-        items: [
-          "PostgreSQL",
-          "MySQL ( creating procedures and functions )",
-          "Microsoft SQL Server"
-        ]
+        items: ["PostgreSQL", "MySQL ( creating procedures and functions )", "Microsoft SQL Server"]
       },
       {
         title: "NoSQL",
-        items: [
-          "MongoDB",
-          "Redis",
-          "Firebase"
-        ]
+        items: ["MongoDB", "Redis", "Firebase"]
       },
       {
         title: "ORMs and ODMs",
-        items: [
-          "Sequelize",
-          "Mongoose",
-          "Entity Framework",
-          "Bookshelf"
-        ]
+        items: ["Prisma", "Sequelize", "Mongoose", "Entity Framework", "Bookshelf"]
       }
     ]
   },
   {
     name: "DevOps",
-    sections: [{
-      items: [
-        "Docker",
-        "Deployment on linux through ssh",
-        "Configuring Nginx (redirection, ssl, file server)",
-        "Working with ssl/tls certificates for https connection",
-        "PM2",
-        "CI/CD (github actions, circleci)"
-      ]
-    }]
-  },
-  {
-    name: "Testing",
-    sections: [{
-      items: [
-        "Jest",
-        "React Testing Library",
-        "Sinon.js",
-        "Nodejs assert standard package"
-      ]
-    }]
-  },
-  {
-    name: "Management & Tracking",
     sections: [
       {
         items: [
-          "Git (GitHub, GitLab, AzureDevOps)",
-          "Jira, Trello",
-          "Code reviews"
-        ]
-      },
-      {
-        title: "Docs",
-        items: [
-          "Writing readme",
-          "Swagger",
-          "jsdoc"
+          "Docker, docker-compose",
+          "Deployment on linux through ssh",
+          "Configuring Nginx (redirection, ssl, file server)",
+          "Working with ssl/tls certificates for https connection",
+          "PM2",
+          "CI/CD (github actions, circleci)",
+          "Working with SNS (AWS)"
         ]
       }
     ]
   },
   {
+    name: "Testing",
+    sections: [
+      {
+        items: ["Jest", "React Testing Library", "Sinon.js", "Nodejs assert standard package"]
+      }
+    ]
+  },
+  {
+    name: "Management & Tracking",
+    sections: [
+      {
+        items: ["Git (GitHub, GitLab, AzureDevOps)", "Jira, Trello", "Code reviews"]
+      },
+      {
+        title: "Docs",
+        items: ["Writing readme", "Swagger", "jsdoc"]
+      }
+    ]
+  },
+  {
     name: "Languages",
-    sections: [{
-      items: [
-        "English - Advanced (C1)",
-        "Ukrainian - Native",
-        "Russian - Native",
-        "Czech - Intermediate (B1)"
-      ]
-    }]
+    sections: [
+      {
+        items: [
+          "English - Advanced (C1)",
+          "Ukrainian - Native",
+          "Russian - Native",
+          "Czech - Intermediate (B1)"
+        ]
+      }
+    ]
   },
   {
     name: "Soft Skills",
-    sections: [{
-      items: [
-        "Working with team",
-        "Team Leading (few junior devs)",
-        "Interviewing job candidates",
-        "Creating test tasks"
-      ]
-    }]
+    sections: [
+      {
+        items: [
+          "Working with team",
+          "Team Leading",
+          "Interviewing job candidates",
+          "Creating test tasks"
+        ]
+      }
+    ]
   },
   {
     name: "Other",
-    sections: [{
-      items: [
-        "Regex"
-      ]
-    }]
+    sections: [
+      {
+        items: ["Regex", "NX (monorepo)"]
+      }
+    ]
   }
 ];

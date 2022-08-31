@@ -9,6 +9,7 @@ export default `
     <li>BI, Data Services</li>
     <li>SaaS</li>
     <li>Home Security</li>
+    <li>Fin Tech</li>
   </ul>
   <p>
     Worked for plenty of clients/companies all over the world
