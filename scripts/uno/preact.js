@@ -13,40 +13,38 @@ const PlayerComponent = ({ index, player, changePlayerScore, renamePlayer, delet
   };
   const deletePlayerConfirm = () => {
     confirm(`Are you sure you want to delete ${player.name}?`) && deletePlayer(player.index);
-  }
+  };
   const rename = () => {
     const name = prompt(`New name for ${player.name}`, player.name);
     if (typeof name?.length !== "number") return;
     if (name.length < 3) return alert("New name must have more than 2 symbols!");
-    renamePlayer({ index, name })
-  }
+    renamePlayer({ index, name });
+  };
 
   return h("tr", null, [
     h("th", { onClick: rename }, player.name),
     h("th", null, player.score),
-    h("th", null, h('button', { onClick: () => changeScore(1) }, "+")),
-    h("th", null, h('button', { onClick: () => changeScore(-1) }, "-")),
-    h("th", null, h('button', { onClick: deletePlayerConfirm }, "✖")),
-  ])
+    h("th", null, h("button", { onClick: () => changeScore(1) }, "+")),
+    h("th", null, h("button", { onClick: () => changeScore(-1) }, "-")),
+    h("th", null, h("button", { onClick: deletePlayerConfirm }, "✖"))
+  ]);
 };
 
 const Main = () => {
-  const [players, setPlayers] = useState(
-    JSON.parse(localStorage.getItem("players") || "[]")
-  );
+  const [players, setPlayers] = useState(JSON.parse(localStorage.getItem("players") || "[]"));
   const [newPlayerName, setNewPlayerName] = useState("");
 
   const nameIsValid = name => name.length > 2;
-  const deletePlayer = (index) => {
+  const deletePlayer = index => {
     players.splice(index, 1);
     setPlayers([...players]);
   };
   const deleteAllPlayers = () => setPlayers([]);
   const setAllToZero = () => {
-    players.forEach(el => el.score = 0);
+    players.forEach(el => (el.score = 0));
     setPlayers([...players]);
   };
-  const addPlayer = (name) => {
+  const addPlayer = name => {
     setPlayers(players => [...players, { name, score: 0 }]);
   };
   const renamePlayer = ({ index, name }) => {
@@ -59,11 +57,12 @@ const Main = () => {
   };
   const updateLocalStorage = players => localStorage.setItem("players", JSON.stringify(players));
   const onSubmit = e => {
-    e.preventDefault()
+    e.preventDefault();
     if (!nameIsValid(newPlayerName)) return alert("Player name should be more that 2 symbols");
     addPlayer(newPlayerName), setNewPlayerName("");
   };
-  const deleteAllConfirm = () => confirm("Are you sure you want delete all players?") && deleteAllPlayers(setPlayers);
+  const deleteAllConfirm = () =>
+    confirm("Are you sure you want delete all players?") && deleteAllPlayers(setPlayers);
   const setAllToZeroConfirm = () => confirm("Reset all players score?") && setAllToZero(setPlayers);
 
   useEffect(() => updateLocalStorage(players), [players, setPlayers]);
@@ -79,9 +78,20 @@ const Main = () => {
           h("th", null, "Delete")
         ])
       ]),
-      h("tbody", null, players.map((player, index) => (
-        h(PlayerComponent, { key: index, index, player, changePlayerScore, renamePlayer, deletePlayer })
-      )))
+      h(
+        "tbody",
+        null,
+        players.map((player, index) =>
+          h(PlayerComponent, {
+            key: index,
+            index,
+            player,
+            changePlayerScore,
+            renamePlayer,
+            deletePlayer
+          })
+        )
+      )
     ]),
 
     h("form", { onSubmit }, [
@@ -91,12 +101,12 @@ const Main = () => {
         value: newPlayerName,
         onChange: e => setNewPlayerName(e.target.value)
       }),
-      h("button", { type: "submit" }, "Add Player"),
+      h("button", { type: "submit" }, "Add Player")
     ]),
 
     h("button", { onClick: setAllToZeroConfirm, className: "global-action" }, "SET ALL TO 0"),
-    h("button", { onClick: deleteAllConfirm, className: "global-action" }, "DELETE ALL"),
+    h("button", { onClick: deleteAllConfirm, className: "global-action" }, "DELETE ALL")
   ]);
-}
+};
 
 export const init = () => render(h(Main), document.getElementById("root"));

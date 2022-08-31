@@ -17,7 +17,7 @@ const store = new Vuex.Store({
       dispatch("updateLocalStorage");
     },
     setAllToZero({ state, dispatch }) {
-      state.players.forEach(el => el.score = 0);
+      state.players.forEach(el => (el.score = 0));
       dispatch("updateLocalStorage");
     },
     addPlayer({ state, dispatch }, name) {
@@ -32,8 +32,10 @@ const store = new Vuex.Store({
       state.players[payload.index].score += payload.score;
       dispatch("updateLocalStorage");
     },
-    updateLocalStorage: ({ state }) => localStorage.setItem("players", JSON.stringify(state.players)),
-    getFromLocalStorage: ({ state }) => state.players = JSON.parse(localStorage.getItem("players") || "[]")
+    updateLocalStorage: ({ state }) =>
+      localStorage.setItem("players", JSON.stringify(state.players)),
+    getFromLocalStorage: ({ state }) =>
+      (state.players = JSON.parse(localStorage.getItem("players") || "[]"))
   }
 });
 
@@ -58,7 +60,8 @@ const PlayerComponent = Vue.component("Player", {
       }
     },
     deletePlayer() {
-      confirm(`Are you sure you want to delete ${this.name}?`) && store.dispatch("deletePlayer", this.index);
+      confirm(`Are you sure you want to delete ${this.name}?`) &&
+        store.dispatch("deletePlayer", this.index);
     },
     rename() {
       const name = prompt(`New name for ${this.name}`, this.name);
@@ -77,12 +80,13 @@ const PlayerComponent = Vue.component("Player", {
   }
 });
 
-export const init = () => new Vue({
-  el: "#root",
-  components: {
-    PlayerComponent
-  },
-  template: `
+export const init = () =>
+  new Vue({
+    el: "#root",
+    components: {
+      PlayerComponent
+    },
+    template: `
   <div class="main">
     <table>
       <thead>
@@ -107,20 +111,21 @@ export const init = () => new Vue({
     <button @click="setAllToZero" class="global-action">SET ALL TO 0</button>
     <button @click="deleteAll" class="global-action">DELETE ALL</button>
   </div>`,
-  data: () => ({ newPlayerName: "" }),
-  methods: {
-    submit() {
-      if (!this.nameIsValid) return alert("Player name should be more that 2 symbols");
-      store.dispatch("addPlayer", this.newPlayerName), this.newPlayerName = "";
+    data: () => ({ newPlayerName: "" }),
+    methods: {
+      submit() {
+        if (!this.nameIsValid) return alert("Player name should be more that 2 symbols");
+        store.dispatch("addPlayer", this.newPlayerName), (this.newPlayerName = "");
+      },
+      deleteAll: () =>
+        confirm("Are you sure you want delete all players?") && store.dispatch("deleteAllPalyers"),
+      setAllToZero: () => confirm("Reset all players score?") && store.dispatch("setAllToZero")
     },
-    deleteAll: () => confirm("Are you sure you want delete all players?") && store.dispatch("deleteAllPalyers"),
-    setAllToZero: () => confirm("Reset all players score?") && store.dispatch("setAllToZero")
-  },
-  computed: {
-    nameIsValid() {
-      return this.newPlayerName.length > 2
+    computed: {
+      nameIsValid() {
+        return this.newPlayerName.length > 2;
+      },
+      players: () => store.state.players
     },
-    players: () => store.state.players
-  },
-  created: () => store.dispatch("getFromLocalStorage")
-});
+    created: () => store.dispatch("getFromLocalStorage")
+  });
