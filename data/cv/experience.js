@@ -209,7 +209,7 @@ export default [
 
       <p>
         Tech Stack - <strong>React, React Native, TypeScript, Node.js, PostgreSQL, NX (monorepo)</strong><br>
-        Third Party Services - <strong>Stipe (with connect), Plaid, Galileo</strong>
+        Third Party Services - <strong>Stipe (with connect), Plaid, Galileo</strong><br>
         Deployment - <strong>AWS, Sendgrid, SNS</strong><br>
         Tracking - <strong>GitHub, Jira</strong>
       </p>
