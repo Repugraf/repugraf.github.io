@@ -35,7 +35,7 @@ export default [
       {
         title: "NodeJS",
         items: [
-          "ExpressJS, Fastify",
+          "ExpressJS, Fastify, Nest.js",
           "Templating Engines (ejs, pug, handlebars)",
           "Working with REST APIs",
           "Authentication with jwt or other type of tokens (unique strings)",
@@ -48,7 +48,6 @@ export default [
           "PM2",
           "Web Scraping with jsdom and puppeteer",
           "Building telegram bots",
-          "Serverless Framework"
         ]
       },
       {
