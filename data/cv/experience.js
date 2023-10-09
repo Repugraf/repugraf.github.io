@@ -216,6 +216,51 @@ export default [
     `
   },
   {
+    title: "GoodCash",
+    content: `
+      <p>
+        In the USA, there is a system of credit scores.
+        If you don't have a high enough score, you won't be able to get a good loan or even rent an apartment.
+        To increase your score, you need to get a loan and pay it back.
+        This process needs to be repeated many times to increment the score.
+        This project is dedicated to simplify this process.
+      </p>
+
+      <p>
+        You install the mobile app, complete onboarding (adding bank account details),
+        and the app will create a virtual and physical credit card (which will actually be delivered to your address).
+        Then you will just use this credit card, and in the background, the scheduler will repay your credit card "debt".
+        It will pull the money you've spent on your credit card from the bank account you specified during onboarding.
+      </p>
+
+      <p>
+        Users will essentially use the credit card (whether virtual or physical) like a debit card,
+        and the repayments will gradually improve their credit score.
+      </p>
+
+      <p>
+        From a technical standpoint, this project involves the aggregation of multiple 3rd party services.
+        The main task here is to ensure that different integrations are working properly with each other.
+      </p>
+
+      <p>
+        Project is split beween this repositories:
+        <ul>
+          <li>Frontend Web App (for onboarding) - using React (Next.js)</li>
+          <li>Backend App - using Node.js (Nest.js), PG, Firebase (auth)</li>
+          <li>Mobile App - using React Native, Firebase (auth)</li>
+        </ul>
+      </p>
+
+      <p>
+        Tech Stack - <strong>React (Next.js), React Native, Node.js (Nest.js), PostgreSQL, Docker</strong><br>
+        Third Party Services - <strong>Stipe, Plaid, Pier, Lithic, LaunchDarkly, Firebase (authentication, notifications), Amplitude, Sentry</strong><br>
+        Deployment - <strong>GCP (Cloud Run, SQL, Secret Manager), Vercel</strong><br>
+        Tracking - <strong>GitHub, Linear, Notion, Sentry</strong>
+      </p>
+    `
+  },
+  {
     title: "My Pet Projects",
     content: `
     <h4>Event Awaiter</h4>
