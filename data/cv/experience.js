@@ -254,7 +254,7 @@ export default [
 
       <p>
         Tech Stack - <strong>React (Next.js), React Native, Node.js (Nest.js), PostgreSQL, Docker</strong><br>
-        Third Party Services - <strong>Stipe, Plaid, Pier, Lithic, LaunchDarkly, Firebase (authentication, notifications), Amplitude, Sentry</strong><br>
+        Third Party Services - <strong>Stipe, Plaid, SVB, Pier, Lithic, LaunchDarkly, Firebase (authentication, notifications), Amplitude, Sentry</strong><br>
         Deployment - <strong>GCP (Cloud Run, SQL, Secret Manager), Vercel</strong><br>
         Tracking - <strong>GitHub, Linear, Notion, Sentry</strong>
       </p>
