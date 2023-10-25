@@ -244,6 +244,10 @@ export default [
       </p>
 
       <p>
+        In the end the product was accuired by the bigger company.
+      </p>
+
+      <p>
         Project is split beween this repositories:
         <ul>
           <li>Frontend Web App (for onboarding) - using React (Next.js)</li>
