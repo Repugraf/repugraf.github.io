@@ -244,7 +244,7 @@ export default [
       </p>
 
       <p>
-        In the end the product was accuired by the bigger company.
+        In the end the product was accuired by the other company (https://joinperry.com).
       </p>
 
       <p>
